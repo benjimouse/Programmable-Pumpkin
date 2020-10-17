@@ -24,9 +24,7 @@ def pump_pulse(pumpkin):
     sleep(.5)
     pumpkin.sides.right.bottom.pulse(10, 0.5, 1)
     sleep(.5)
-    pumpkin.eyes.blink(.1, .1, 0, 0, 12) # Blink on for .1 seconds, off for .1 seconds, do not fade and do this 12 times.
-    sleep(3)
-    pumpkin.eyes.blink(.1, .1, 0, 0, 12) # Blink on for .1 seconds, off for .1 seconds, do not fade and do this 12 times.
+    pumpkin.eyes.pulse(5, 0.5, 1)
     sleep(5)
 
 pumpkin = PumpkinPi(pwm=True)
