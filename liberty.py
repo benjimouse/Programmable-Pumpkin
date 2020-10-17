@@ -25,7 +25,7 @@ def pump_pulse(pumpkin):
     pumpkin.sides.right.bottom.pulse(10, 0.5, 1)
     sleep(.5)
     pumpkin.eyes.pulse(5, 0.5, 1)
-    sleep(5)
+    sleep(15)
 
 pumpkin = PumpkinPi(pwm=True)
 
